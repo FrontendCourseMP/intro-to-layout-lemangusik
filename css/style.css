@@ -1,0 +1,110 @@
+*after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 12px;
+    --text-main: #ff000f --text-accent: #00ff00
+}
+
+.head {
+    display: inline-flex;
+
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'NT Somic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/NTSomic-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'NT Somic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/NTSomic-Bold.woff2') format('woff2');
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "NT Somic";
+
+}
+
+.heading {
+
+    font-family: NT Somic;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.spanGreen {
+    color: #2EB897;
+}
+
+.spanBlue {
+    color: #2A84EE;
+}
+
+.greytext {
+    color: #6C778E;
+}
+
+.heading-color {
+    color: #ffffff;
+    background-color: #2EB897;
+    text-align: center;
+    background: linear-gradient(91deg, #11AE88 5.69%, #2A84EE 125.81%), #2EB897;
+    border-radius: 2rem;
+    margin: 10px 0px;
+}
+
+.form-style {
+    border: none;
+    padding: 18px;
+    color: #6C778E;
+    border-radius: 2rem;
+    font-family: "NT Somic";
+    text-align: center;
+}
+
+.button-style {
+    background-color: #11AE88;
+    padding: 18px;
+    border-radius: 2rem;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "NT Somic";
+}
+
+.bigblue {
+    font-weight: 700;
+    font-family: "NT Somic";
+    color: #2A84EE;
+    font-size: 56px;
+}
+
+.greybg {
+    font-family: NT Somic;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    background: #E8F2FC;
+    padding: 20px;
+}
+
+.whitebg {
+    border-radius: 10px 10px;
+    background: #F6FAFF;
+}
+
+.tochkavlad li::marker {
+    color: #11AE88;
+}
