@@ -1,8 +1,9 @@
-*after{
+*after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 :root {
     font-size: 12px;
     --text-main: #ff000f --text-accent: #00ff00
@@ -62,6 +63,11 @@ body {
     background: linear-gradient(91deg, #11AE88 5.69%, #2A84EE 125.81%), #2EB897;
     border-radius: 2rem;
     margin: 10px 0px;
+    width: 320px;
+    height: 269px
+    background-size: contain;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .form-style {
@@ -71,6 +77,12 @@ body {
     border-radius: 2rem;
     font-family: "NT Somic";
     text-align: center;
+    display: flex;
+    width: 280px;
+    padding: 18px 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .button-style {
@@ -107,4 +119,93 @@ body {
 
 .tochkavlad li::marker {
     color: #11AE88;
+}
+
+#tochkavlad {
+    color: #6C778E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.32px;
+    padding: 20px auto;
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.boldtext {
+    font-family: NT Somic;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0px 40px;
+}
+
+.buttongrad {
+    background: linear-gradient(91deg, #11AE88 5.69%, #2A84EE 125.81%), #2EB897;
+    padding: 18px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    margin: 14px auto;
+    display: block;
+    width: 280px;
+    height: 42px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0%;
+    letter-spacing: 0.32px;
+
+}
+
+.divchik {
+    margin: 0 auto;
+    display: block;
+}
+
+.info-buttons-a {
+    background-color: #E8F2FC;
+    font-family: NT Somic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.36px;
+    border-radius: 10px;
+    border: none;
+    color: #2EB897;
+    width: 320px;
+    height: 80px;
+    padding: 20px;
+    margin: 10px 10px;
+}
+
+.button-style1 {
+    border-radius: 30px;
+    background: linear-gradient(91deg, #2A84EE 5.69%, #11AE88 169.72%), #11AE88;
+    width: 280px;
+    height: 48px;
+    flex-shrink: 0;
+    color: white;
+    border: none;
+}
+.imgjensh{
+margin: 95px 0px auto  auto;
+position:relative
+}
+.imgclock{
+    margin: 0px 0px auto  auto;
+    position:relative
+    }
+.group5{
+    width: 296.381px;
+height: 192.199px;
+flex-shrink: 0;
+position:absolute;
+display: flex;
+flex-flow:row wrap;
 }
