@@ -12,8 +12,12 @@
 <body>
     <header class="head">
         <a><img src="img/7.svg" alt="logo" width="189" height="18"></a>
-        <button><img src="#" alt="quit" width="40" height="40"></button>
-        <button><img src="#" alt="menu" width="40" height="40"></button>
+        <button type="button" class="header__login">
+            <span class="visially-hidden">Войти</span>
+        </button>
+        <button type="button" class="header__login">
+            <span class="visially-hidden">Войти</span>
+        </button>
     </header>
     <main>
         <section class="heading">
@@ -30,44 +34,59 @@
             <div class="heading-color">
                 <img class="group5" src="img/Group5.svg" alt="#">
                 <p>Начните свой 3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
-                <form class="form-style"><input type="text" value="Введите ваш email" class="form-style"></form>
-                <button class="button-style1" type="button" name="menu">Попробовать</button>
+                <form class="form-style"><label for="input"><input ID="input" type="text" value="Введите ваш email"
+                            class="form-style">
+                    </label>
+                    <button class="button-style1" type="submit" name="menu">Попробовать</button>
+                </form>
             </div>
-            <section class="greybg">
-                <p class="bigblue">777</p>
-                <p class="greytext">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
-                </p>
-                <p class="bigblue">5</p>
-                <p class="greytext">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
-                </p>
-                <p class="bigblue">100 000</p>
-                <p class="greytext">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
-                </p>
-            </section>
+        </section>
+        <section class="greybg">
+            <ul>
+                <li>
+                    <h3 class="bigblue">777</h3>
+                    <p class="greytext">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе
+                        отчётов
+                    </p>
+                </li>
+                <li>
+                    <p class="bigblue">5</p>
+                    <p class="greytext">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе
+                        отчётов
+                    </p>
+                </li>
+                <li>
+                    <p class="bigblue">100 000</p>
+                    <p class="greytext">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе
+                        отчётов
+                    </p>
+                </li>
+            </ul>
         </section>
         <section>
             <h2>Возможности сервиса</h2>
             <div class="whitebg">
-                <p class="greybg"> Финансовая аналитика<button type="button" name="menu"></button></p>
+                <p class="greybg"> Финансовая аналитика</p>
+                <button type="button" class="header__login">
+                    <span class="visially-hidden">Войти</span>
+                </button>
                 <div class="whitebg">
                     <h3 class="boldtext">Инструменты для финансовой аналитики</h3>
-                    <div class="divchik">
-                        <ul class="tochkavlad" id="tochkavlad">
-                            <li>Отчёт о прибылях и убытках (P&L)</li>
-                            <li>Отчёт о движении денежных средств (ДДС)</li>
-                            <li>Журнал операций</li>
-                            <li>Сводка продаж</li>
-                            <li>Учёт самовыкупов</li>
-                        </ul>
-                        <img src="#" alt="табличка">
-                        <br><button type="button" name="menu" class="buttongrad">Попробовать бесплатно</button>
-                    </div>
+                    <ul class="tochkavlad" id="tochkavlad">
+                        <li>Отчёт о прибылях и убытках (P&L)</li>
+                        <li>Отчёт о движении денежных средств (ДДС)</li>
+                        <li>Журнал операций</li>
+                        <li>Сводка продаж</li>
+                        <li>Учёт самовыкупов</li>
+                    </ul>
+                    <img src="#" alt="табличка">
+                    <button type="button" name="menu" class="buttongrad">Попробовать бесплатно</button>
                 </div>
                 <div>
-                    <br><button type="button" name="menu" class="info-buttons-a">Товарная аналитика</button>
-                    <br><button type="button" name="menu" class="info-buttons-a">Аналитика внутренней рекламы</button>
-                    <br><button type="button" name="menu" class="info-buttons-a">Статистика</button>
-                    <br><button type="button" name="menu" class="info-buttons-a">Инструменты</button>
+                    <button type="button" name="menu" class="info-buttons-a">Товарная аналитика</button>
+                    <button type="button" name="menu" class="info-buttons-a">Аналитика внутренней рекламы</button>
+                    <button type="button" name="menu" class="info-buttons-a">Статистика</button>
+                    <button type="button" name="menu" class="info-buttons-a">Инструменты</button>
                 </div>
             </div>
         </section>
@@ -75,8 +94,10 @@
             <div class="heading-color">
                 <h2>Начните экономить своё время</h2>
                 <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
-                <form class="form-style"><input type="text" value="Введите ваш email" class="form-style"></form>
-                <button class="button-style1" type="button" name="menu">Попробовать</button>
+                <form class="form-style"><label for="inputt"><input ID="inputt" type="text" value="Введите ваш email"
+                            class="form-style"></label>
+                    <button class="button-style1" type="submit" name="menu">Попробовать</button>
+                </form>
                 <img class="imgjensh" src="#" alt="#">
             </div>
         </section>
@@ -85,12 +106,15 @@
             <p>C Mpassistant вы сможете:</p>
             <ul>
                 <li>
+                    <img src="#" alt="#">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem?</p>
                 </li>
                 <li>
+                    <img src="#" alt="#">
                     <p>Itaque deserunt quisquam id, enim dicta unde blanditiis! Numquam, at.</p>
                 </li>
                 <li>
+                    <img src="#" alt="#">
                     <p>Esse praesentium alias animi corrupti aliquam facere. Harum, accusantium tempora?</p>
                 </li>
             </ul>
@@ -132,97 +156,103 @@
             <div>
                 <h2>Попробуйте бесплатно</h2>
                 <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
-                <form><input type="text">Введите ваш email</form>
-                <button type="button" name="menu">Попробовать</button>
+                <form><label for="inputtt"><input ID="inputtt" type="text">Введите ваш email</label></form>
+                <a href="#">попробовать</a>
                 <img src="#" alt="">
             </div>
         </section>
         <section>
+            <h2>Выберите Тариф</h2>
             <div>
-                <h2>Выберите Тариф</h2>
-                <button type="button" name="menu">1</button>
-                <button type="button" name="menu">3</button>
-                <button type="button" name="menu">6</button>
-                <button type="button" name="menu">12</button>
+                <button type="button" name="menu">1 месяц</button>
+                <button type="button" name="menu">3 месяца</button>
+                <button type="button" name="menu">6 месяцев</button>
+                <button type="button" name="menu">12 месяцев</button>
             </div>
-            <div>
-                <p>Стартовый</p>
-                <p>4990</p>
-                <button type="button" name="menu">попробовать</button>
-                <br><a>Подробнее<img src="#" alt=">"></a>
-            </div>
-            <div>
-                <p>Стартовый +</p>
-                <p>4491</p>
-                <p>13410</p>
-                <button type="button" name="menu">попробовать</button>
-                <br><a>Подробнее<img src="#" alt=">"></a>
-            </div>
-            <div>
-                <p>Профи</p>
-                <p>4291</p>
-                <p>25410</p>
-                <button type="button" name="menu">попробовать</button>
-                <br><a>Подробнее<img src="#" alt=">"></a>
-            </div>
-        </section>
-        <div>
-            <h2>Начинающим селлерам с выручкой</h2>
-            <p>до 200 000 ₽/мес</p>
-            <p>Бесплатно</p>
-            <button type="button" name="menu">попробовать</button>
-            <br><a>Подробнее<img src="#" alt=">"></a>
-            <img src="#" alt="like">
-        </div>
-        <section>
-            <h2>Отзывы</h2>
-            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis cupiditate, iste tempora nihil porro
-                perferendis rem, veritatis architecto distinctio dolorem natus velit. Enim voluptas sequi veritatis
-                laborum nisi amet perspiciatis!</P>
-            <button type="button" name="menu">Читать полностью</button>
-            <p>- Алексей</p>
+            <ul>
+                <li>
+                    <p>Стартовый</p>
+                    <p>4990</p>
+                    <a href="#">попробовать</a>
+                    <a>Подробнее<img src="#" alt=">"></a>
+                </li>
+                <li>
+                    <p>Стартовый +</p>
+                    <p>4491</p>
+                    <p>13410</p>
+                    <a href="#">попробовать</a>
+                    <a>Подробнее<img src="#" alt=">"></a>
+                </li>
+                <li>
+                    <p>Профи</p>
+                    <p>4291</p>
+                    <p>25410</p>
+                    <a href="#">попробовать</a>
+                    <a>Подробнее<img src="#" alt=">"></a>
+                </li>
+                <li>
+                    <h2>Начинающим селлерам с выручкой</h2>
+                    <p>до 200 000 ₽/мес</p>
+                    <p>Бесплатно</p>
+                    <a href="#">попробовать</a>
+                    <a href="#"><img src="#" alt=">">Подробнее</a>
+                    <img src="#" alt="like">
+                </li>
+            </ul>
+            <section>
+                <h2>Отзывы</h2>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis cupiditate, iste tempora nihil
+                    porro
+                    perferendis rem, veritatis architecto distinctio dolorem natus velit. Enim voluptas sequi veritatis
+                    laborum nisi amet perspiciatis!</P>
+                <button type="button" name="menu">Читать полностью</button>
+                <p>- Алексей</p>
+            </section>
         </section>
     </main>
     <footer>
-        <section>
-            <img src="#" alt="logo">
-            <h3>MPASSISANT</h3>
-            <p>Аналитика и оцифровка продаж <a href="#">Wildberries</a> и <a href="#">Ozon</a> </p>
-            <a href="#"><img src="#" alt="vk"></a>
-            <a href="#"><img src="#" alt="tg"></a>
-            <a href="#"><img src="#" alt="youtube"></a>
-        </section>
-        <section>
-            <div>
-                <h3>Сервисы</h3>
-                <ul>
-                    <li><a>Для кого</a></li>
-                    <li><a>Возможности</a></li>
-                    <li><a>Тарифы</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Клиентам</h3>
-                <ul>
-                    <li><a>Вход</a></li>
-                    <li><a>Регистрация</a></li>
-                    <li><a>Восстановление пароля</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Документы</h3>
-                <ul>
-                    <li><a>Пользовательское соглашение</a></li>
-                    <li><a>Политика конфиденциальности</a></li>
-                    <li><a>Публичная оферта</a></li>
-                    <li><a>Использование cookie</a></li>
-                    <li><a>Техническая поддержка</a></li>
-                </ul>
-            </div>
-        </section>
+        <img src="#" alt="logo">
+        <h3>MPASSISANT</h3>
+        <p>Аналитика и оцифровка продаж <a href="#">Wildberries</a> и <a href="#">Ozon</a> </p>
+        <ul>
+            <li><a href="#"><img src="#" alt="vk"></a></li>
+            <li><a href="#"><img src="#" alt="tg"></a></li>
+            <li><a href="#"><img src="#" alt="youtube"></a></li>
+        </ul>
         <div>
-            <img src="#" alt="bank"><img src="#" alt="visa"><img src="#" alt="mastercard"><img src="#"
-                alt="maestro"><img src="#" alt="mir">
+            <h3>Сервисы</h3>
+            <ul>
+                <li><a>Для кого</a></li>
+                <li><a>Возможности</a></li>
+                <li><a>Тарифы</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Клиентам</h3>
+            <ul>
+                <li><a>Вход</a></li>
+                <li><a>Регистрация</a></li>
+                <li><a>Восстановление пароля</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Документы</h3>
+            <ul>
+                <li><a>Пользовательское соглашение</a></li>
+                <li><a>Политика конфиденциальности</a></li>
+                <li><a>Публичная оферта</a></li>
+                <li><a>Использование cookie</a></li>
+                <li><a>Техническая поддержка</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><img src="#" alt="bank"></li>
+                <li><img src="#" alt="visa"></li>
+                <li><img src="#" alt="mastercard"></li>
+                <li><img src="#" alt="maestro"></li>
+                <li><img src="#" alt="mir"></li>
+            </ul>
             <p>© 2022–2023 Mpassistant</p>
             <p>Информация, размещённая на сайте, не является публичной офертой</p>
             <p>Редизайн сайта <a href='#'>Turkuletsdesign</a></p>
