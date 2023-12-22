@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>LE'mango</title>
+</head>
+<body>
+  <header class="header">
+    
+    <div class="header__header-container mobile">
+      <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
+      <a href="#" class="header-container__entrance-button"><img src="img/layout/icon/entrance.svg" alt="Entrance"></a>
+      <button class="header-container__burger-button"><img src="img/layout/icon/burger-menu.svg" alt="Menu"></button>
+    </div>
+
+    <div class="header__header-container desctop">
+      <div class="header-container__logo">
+        <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
+        <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и
+          <span class="sapphirine-text">Ozon</span></p>
+      </div>
+      <nav class="header-container__nav">
+        <a href="#">О нас</a>
+        <a href="#">Возможности</a>
+        <a href="#">Тарифы</a>
+      </nav>
+      <div class="header-container__entrance">
+        <a href="#" class="entrance__entrance-button"><img src="img/layout/icon/entrance.svg" alt="Entrance">Вход</a>
+        <a href="#" class="entrance__registration-button">Зарегистрироваться</a>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <section class="main__hero">
+      <h1><span class="green-text">Внутренняя аналитика</span> и <span class="blue-text">финансовый учёт</span>
+         для бизнеса на маркетплейсах<img src="img/layout/icon/ozon-wb.svg" alt="Ozon and Wildberries"></h1>
+      <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
+
+      <form class="lets-start-form" action="#">
+        <p>Начните свой 3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
+        <label for="sub__email_1">
+          <input type="email" name="email" id="sub__email_1" placeholder="Введите ваш email">
+          <button type="submit">Попробовать</button>          
+        </label>
+      </form>
+
+      <img class="desctop" src="img/layout/hero/corobki.svg" alt="Corobki">
+
+      <ul class="hero__statistic">
+        <li>
+          <span class="blue-text">777</span>
+          <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
+        </li>
+        <li>
+          <span class="blue-text">5</span>
+          <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
+        </li>
+        <li>
+          <span class="blue-text">100 000</span>
+          <p>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main__service-capabilities">
+      <h2>Возможности сервиса</h2>
+
+      <ul class="service-capabilities__presentation mobile">
+        <li>
+          <details open>
+            <summary>Финансовая аналитика<img src="img/layout/icon/pop-down.svg" alt="pop-up"></summary>
+            <div class="selected-button__content">
+              <h3>Инструменты для финансовой аналитики</h3>
+              <ul class="content__tool-list">
+                <li><p>Отчёт о прибылях и убытках (P&L)</p></li>
+                <li><p>Отчёт о движении денежных средств (ДДС)</p></li>
+                <li><p>Журнал операций</p></li>
+                <li><p>Сводка продаж</p></li>
+                <li><p>Учёт самовыкупов</p></li>
+              </ul>
+              <img src="img/layout/service-capabilities/report.jpg" alt="report">
+              <a href="#">Попробовать бесплатно</a>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Товарная аналитика<img src="img/layout/icon/pop-down.svg" alt="pop-up"></summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Аналитика внутренней рекламы<img src="img/layout/icon/pop-down.svg" alt="pop-up"></summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Статистика<img src="img/layout/icon/pop-down.svg" alt="pop-up"></summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Инструменты<img src="img/layout/icon/pop-down.svg" alt="pop-up"></summary>
+          </details>
+        </li>
+      </ul>
+
+      <ul class="service-capabilities__presentation desctop">
+        <li class="presentation__selected-button"><p>Финансовая аналитика</p></li>
+        <li><p>Товарная аналитика</p></li>
+        <li><p>Аналитика внутренней рекламы</p></li>
+        <li><p>Статистика</p></li>
+        <li><p>Инструменты</p></li>
+      </ul>
+      <div class="presentation__content desctop">
+        <div class="left-side">
+          <h3>Инструменты для финансовой аналитики</h3>
+          <ul class="content__tool-list">
+            <li><p>Отчёт о прибылях и убытках (P&L)</p></li>
+            <li><p>Отчёт о движении денежных средств (ДДС)</p></li>
+            <li><p>Журнал операций</p></li>
+            <li><p>Сводка продаж</p></li>
+            <li><p>Учёт самовыкупов</p></li>
+          </ul>
+          <a href="#">Попробовать бесплатно</a>
+        </div>
+        <div class="right-side"><img src="img/layout/service-capabilities/report-desctop.png" alt="report"></div>
+      </div>
+
+      <form class="lets-start-form">
+        <h3>Начните экономить своё время</h3>
+        <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
+        <label for="sub__email_4">
+          <input type="email" name="email" id="sub__email_4" placeholder="Введите ваш email">
+          <button type="submit">Попробовать</button>
+        </label>
+        <img src="img/layout/service-capabilities/WOMAN-1.png" alt="woman">
+      </form>
+    </section>
+    <section class="main__ull-be-able">
+      <h2>Собираем единые отчёты по всем вашим магазинам</h2>
+      <p>C Mpassistant вы сможете:</p>
+      <ul class="ull-be-able__possibilities-container">
+        <li><img src="img/layout/icon/ul-mark.svg" alt="Mark"><p>Сможете видеть прибыль по всем магазинам и маркетплейсам в одном месте</p>
+        <li><img src="img/layout/icon/ul-mark.svg" alt="Mark"><p>Не потратите время на сбор данных из нескольких кабинетов или маркетплейсов</p></li>
+        <li><img src="img/layout/icon/ul-mark.svg" alt="Mark"><p>Добавите любое количество магазинов</p></li>
+      </ul>
+      <img class="mobile" src="img/layout/ull-be-able/scheme.png" alt="Scheme">
+      <img class="desctop" src="img/layout/ull-be-able/scheme-desctop.png" alt="Scheme">
+    </section>
+    <section class="main__why-us">
+      <h2>Почему выбирают Mpassistant</h2>
+      <ul class="why-us__advantages-container">
+        <li>
+          <h3><img src="img/layout/icon/why-us__icon-1.svg" alt="Icon">Точность данных</h3>
+          <p>Данные в отчётах сервиса полностью совпадает с данными ваших магазинов на маркетплейсах.</p>
+        </li>
+        <li>
+          <h3><img src="img/layout/icon/why-us__icon-2.svg" alt="Icon">Большой функционал</h3>
+          <p>Полный набор инструментов для внутренней аналитики для Wildberries и Ozon. Более 10 полезных отчётов
+            с удобными настраиваемыми фильтрами и параметрами.</p>
+        </li>
+        <li>
+          <h3><img src="img/layout/icon/why-us__icon-3.svg" alt="Icon">Лёгкость освоения</h3>
+          <p>Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции и видео, помогающие легко читать
+            их и использовать.</p>
+        </li>
+        <li>
+          <h3><img src="img/layout/icon/why-us__icon-4.svg" alt="Icon">Подходит всем</h3>
+          <p>Mpassistant создан селлерами для селлеров. Наш опыт в товарном бизнесе и разработке IT систем позволил
+            создать полезный и удобный продукт, поэтому он подойдёт как для новичков, так и для опытных селлеров.</p>
+        </li>
+        <li>
+          <h3><img src="img/layout/icon/why-us__icon-5.svg" alt="Icon">Конфиденциальность</h3>
+          <p>Ваша конфиденциальность для нас самый главный приоритет. Все ваши данные надёжно сохранены, а информация
+            об этом записана в договоре-оферте. По желанию можем заключить дополнительное соглашение (NDA).</p>
+        </li>
+        <li>
+          <h3><img src="img/layout/icon/why-us__icon-6.svg" alt="Icon">Служба заботы</h3>
+          <p>Наша служба заботы готова решить практически любые вопросы и в режиме 24/7.</p>
+        </li>
+      </ul>
+      <form class="lets-start-form">
+        <h3>Попробуйте бесплатно</h3>
+        <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
+        <label for="sub__email_2">
+          <input type="email" name="email" id="sub__email_2" placeholder="Введите ваш email">
+          <button type="submit">Попробовать</button>   
+        </label>
+        <img src="img/layout/why-us/WOMAN-2.png" alt="woman">
+      </form>
+    </section>
+    <section class="main__choose-tariff">
+      <h2>Выберите тариф</h2>
+      <div class="overflow-wrapper">
+        <ul class="choose-tariff__duration">
+          <li><button class="selected-button">1 месяц</button></li>
+          <li><button>3 месяца</button></li>
+          <li><button>6 месяцев</button></li>
+          <li><button>12 месяцев</button></li>
+        </ul>
+      </div>
+      <ul class="choose-tariff__tariff-level">
+        <li>
+          <h3>Стартовый</h3>
+          <span class="blue-text">4 990 ₽</span>
+          <a href="#">Попробовать</a>
+          <a href="#">Подробнее<img src="img/layout/icon/arrow-right.svg" alt="Arrow right"></a>
+        </li>
+        <li>
+          <h3>Стартовый +</h3>
+          <span class="gray-text">4 491 ₽/мес</span>
+          <span class="blue-text">13 473 ₽</span>
+          <a href="#">Попробовать</a>
+          <a href="#">Подробнее<img src="img/layout/icon/arrow-right.svg" alt="Arrow right"></a>
+          <p class="tariff-level__sale-label">— 10%</p>
+        </li>
+        <li>
+          <h3>Профи</h3>
+          <span class="gray-text">4 241 ₽/мес</span>
+          <span class="blue-text">25 446 ₽</span>
+          <a href="#">Попробовать</a>
+          <a href="#">Подробнее<img src="img/layout/icon/arrow-right.svg" alt="Arrow right"></a>
+          <p class="tariff-level__sale-label">— 15%</p>
+        </li>
+        <li>
+          <h3>Начинающим селлерам с выручкой</h3>
+          <span class="gray-text">до 200 000 ₽/мес</span>
+          <span class="blue-text">Бесплатно</span>
+          <a href="#">Попробовать</a>
+          <a href="#">Подробнее<img src="img/layout/icon/arrow-right.svg" alt="Arrow right"></a>
+          <img src="img/layout/choose-tariff/WOMAN-3.png" alt="woman">
+        </li>
+      </ul>
+    </section>
+    <section class="main__review">
+      <h2>Отзывы</h2>
+      <ul class="review__review-container">
+        <li>
+          <p>Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара. Калькулятор
+            полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня бесплатно, так как проходил
+            по условиям бесплатного доступа: оборот до 200т.р в месяц. Этого не встретить на других сайтах,
+            это возможность развиваться на ранних этапах, без вложения огромных сумм для доступа к подобным сайтам.
+            Радует поддержка, получал ответы на всевопросы, выслушивали</p>
+          <div class="review-container__blur">
+            <button>
+              <span class="green-text">Читать полностью<img src="img/layout/icon/mark-down.svg" alt="Pointer down"></span>
+            </button>
+            <h3>— Алексей</h3>
+          </div>
+          <img src="img/layout/icon/quote.svg" alt="Quote">
+        </li>
+        <li class="desctop">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores cupiditate excepturi natus maiores dolorem repellendus magnam porro adipisci? Nihil possimus minus voluptate eveniet, a provident? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rerum, beatae ratione pariatur minus quae. Mollitia, quam ducimus autem saepe, magnam nostrum consequuntur architecto molestias dicta pariatur debitis quia dolorem? Officiis voluptatum quas fuga.
+            Функционал сервиса, тот что есть — полностью устраивает.Хочется ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!</p>
+          <div class="review-container__blur">
+            <button>
+              <span class="green-text">Читать полностью<img src="img/layout/icon/mark-down.svg" alt="Pointer down"></span>
+            </button>
+            <h3>— Владислав</h3>
+          </div>
+          <img src="img/layout/icon/quote.svg" alt="Quote">
+        </li>
+      </ul>
+      <ul class="review__switch desctop">
+        <li><button><img src="img/layout/icon/arrow-switch.svg" alt="Arrow left"></button></li>
+        <li><button><img src="img/layout/icon/arrow-switch.svg" alt="Arrow right"></button></li>
+      </ul>
+      <ul class="review-container__point-container mobile">
+        <li><img src="img/layout/icon/point-green.svg" alt="Point"></li>
+        <li><img src="img/layout/icon/point-gray.svg" alt="Point"></li>
+        <li><img src="img/layout/icon/point-gray.svg" alt="Point"></li>
+        <li><img src="img/layout/icon/point-gray.svg" alt="Point"></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="footer__footer-container">
+      <li class="footer-container__mpassistant-link">
+        <div class="mpassistant-link__logo">
+          <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
+          <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и
+            <span class="sapphirine-text">Ozon</span>
+          </p>
+        </div>
+        <ul class="mpassistant-link__social-link">
+          <li><img src="img/layout/icon/icon-vk.svg" alt="VK"></li>
+          <li><img src="img/layout/icon/icon-telegram.svg" alt="Telegram"></li>
+          <li><img src="img/layout/icon/icon-youtube.svg" alt="YouTube"></li>
+        </ul>
+      </li>
+      <li class="footer-container__more">
+        <ul>
+          <li><h3>Сервис</h3></li>
+          <li><a href="#">Для кого</a></li>
+          <li><a href="#">Возможности</a></li>
+          <li><a href="#">Тарифы</a></li>
+        </ul>
+        <ul>
+          <li><h3>Клиентам</h3></li>
+          <li><a href="#">Вход</a></li>
+          <li><a href="#">Регистрация</a></li>
+          <li><a href="#">Восстановления пароля</a></li>
+        </ul>
+        <ul>
+          <li><h3>Документы</h3></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Использование cookie</a></li>
+          <li><a href="#">Техническая поддержка</a></li>
+        </ul>
+      </li>
+      <li class="footer-container__payment-method">
+        <a href="#"><img src="img/layout/footer/modulbank.svg" alt="Модуль банк"></a>
+        <a href="#"><img src="img/layout/footer/visa.svg" alt="VISA"></a>
+        <a href="#"><img src="img/layout/footer/mastercard.svg" alt="Master Card"></a>
+        <a href="#"><img src="img/layout/footer/maestro.svg" alt="Maestro"></a>
+        <a href="#"><img src="img/layout/footer/mir.svg" alt="МИР"></a>
+      </li>
+      <li class="footer-container__license">
+        <p>© 2022–2023 Mpassistant</p>
+        <p>Информация, размещённая на сайте, не является публичной офертой</p>
+      </li>
+      <li class="footer-container__about-redesign">
+        <p>Редизайн сайта <a href="#"><span class="green-text">Turkuletsdesign</span></a></p>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
