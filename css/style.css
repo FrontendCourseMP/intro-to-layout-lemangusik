@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   color: black;
-
+  box-sizing: border-box;
   padding-inline-start: 0;
   list-style: none;
 
