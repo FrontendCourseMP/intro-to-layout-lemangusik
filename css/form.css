@@ -21,7 +21,6 @@
 
 footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
  }
  label {
@@ -78,4 +77,14 @@ button:hover {
 legend{
     font-size: 3rem;
     font-weight: bold;
+}
+.contact-interval-options{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.contact-interval-options input {
+    width: 1.5rem;
+    height: 1.5rem;
 }
