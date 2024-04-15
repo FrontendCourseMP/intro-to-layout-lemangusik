@@ -1,29 +1,30 @@
 :root {
     font-size: 62.5%;
-  
+
     --color-blue-green-text: #2EB897;
     --color-blue-green-additional: #11AE88;
     --color-blue: #2A84EE;
     --color-gray: #6C778E;
     --color-lilac-wb: #702A8A;
     --color-sapphirine-ozon: #1065FF;
-  
+
     --background-gray: #EAF3FD;
     --background-light-gray: #F6FAFF;
-    
+
     --gradient-left-to-right: linear-gradient(91deg, #11AE88 5.69%, #2A84EE 125.81%), #2EB897;
     --gradient-right-to-left: linear-gradient(91deg, #2A84EE 5.69%, #11AE88 169.72%), #11AE88;
-    
+
     --radius-segment: 10px;
     --radius-button: 30px;
     --radius-sale-birk: 0 10px;
-  }
+}
 
 footer {
     position: absolute;
     width: 100%;
- }
- label {
+}
+
+label {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -34,24 +35,30 @@ fieldset {
     margin-bottom: 20px;
 }
 
-fieldset > div {
+fieldset>div {
+    display: flex;
+    flex-direction: column-reverse;
     margin-bottom: 15px;
 }
 
-fieldset > div label {
+fieldset>div label {
     display: block;
     margin-bottom: 5px;
 }
 
-fieldset > div input,
-fieldset > div select {
+fieldset>div input:focus+label {
+    color: #1065FF;
+}
+
+fieldset>div input,
+fieldset>div select {
     width: 100%;
     padding: 8px;
     border-radius: var(--radius-segment);
     border: 1px solid var(--color-gray);
 }
 
-fieldset > div input[type="checkbox"] {
+fieldset>div input[type="checkbox"] {
     margin-right: 5px;
 }
 
@@ -74,17 +81,74 @@ button:hover {
     background-color: var(--color-blue-green-text);
 }
 
-legend{
+legend {
     font-size: 3rem;
     font-weight: bold;
 }
-.contact-interval-options{
+
+.contact-interval-options {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .contact-interval-options input {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+:user-invalid {
+    border-color: rgb(211, 38, 38);
+}
+
+:user-valid {
+    border-color: rgb(31, 233, 31);
+}
+
+.footer-logo {
+    transform: rotate(30deg) skew(10deg, 10deg) scale(1.5);
+}
+
+fieldset>div input[type="checkbox"]:checked+label {
+    color: #1065FF;
+}
+
+.form_b {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.form_b legend {
+    color: #11AE88;
+}
+
+dt {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+dd{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+dd::before {
+    content: "🛈";
+    margin-right: 5px;
+}
+
+
+.pseudo-elements-list dt:nth-child(2n+1) {
+    color: #11AE88;
+}
+
+.pseudo-elements-list dt:nth-child(3n) {
+    color: #1065FF;
+}
+.form_b fieldset{
+    margin: 50px;
+}
+
+.form_b input[type="checkbox"]:checked + label {
+text-decoration: line-through;
 }

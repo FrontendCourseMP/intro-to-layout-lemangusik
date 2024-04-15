@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
   <link rel="stylesheet" href="css/form.css">
   <title>LE'mangoFORMS</title>
 </head>
+
 <body>
   <header class="header">
-    
+
     <div class="header__header-container mobile">
       <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
       <a href="#" class="header-container__entrance-button"><img src="img/layout/icon/entrance.svg" alt="Entrance"></a>
@@ -21,7 +23,8 @@
       <div class="header-container__logo">
         <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
         <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и
-          <span class="sapphirine-text">Ozon</span></p>
+          <span class="sapphirine-text">Ozon</span>
+        </p>
       </div>
       <nav class="header-container__nav">
         <a href="#">О нас</a>
@@ -37,75 +40,102 @@
   </header>
   <main>
     <section>
-        <h2>Регистрация нового пользователя</h2>
-        
-        <form action="//httpbin.org/post" method="post">
-            <fieldset>
-                <legend class="green-text ">Личная информация</legend>
-                <div>
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-                </div>
-                <div>
-                    <label for="dob">Дата рождения:</label>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
-                <div>
-                    <label for="gender">Пол:</label>
-                    <select id="gender" name="gender">
-                        <option value="male">Мужской</option>
-                        <option value="female">Женский</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="password">Пароль:</label>
-                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
-                </div>
-            </fieldset>
-            
-            <fieldset>
-                <legend class="green-text">Контактные данные</legend>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-                </div>
-                <div>
-                    <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+7 (123) 456-78-90">
-                </div>
-                <div>
-                    <label>Удобный интервал для связи:</label>
-                    <div class="contact-interval-options">
-                        <label for="morning">Утро</label>
-                        <input type="checkbox" id="morning" name="contactInterval" value="morning">
-                    </div>
-                    <div class="contact-interval-options">
-                        <label for="day">День</label>
-                        <input type="checkbox" id="day" name="contactInterval" value="day">
-                    </div>
-                    <div class="contact-interval-options">
-                        <label for="evening">Вечер</label>
-                        <input type="checkbox" id="evening" name="contactInterval" value="evening">
-                    </div>
-                    <div class="contact-interval-options">
-                        <label for="night">Ночь</label>
-                        <input type="checkbox" id="night" name="contactInterval" value="night">
-                    </div>
-                </div>
-            </fieldset>
-            
-            <div>
-                <button type="submit"><i class="fas fa-paper-plane"></i> Отправить</button>
-                <button type="reset"><i class="fas fa-sync-alt"></i> Сбросить</button>
+      <h2>Регистрация нового пользователя</h2>
+
+      <form action="//httpbin.org/post" method="post">
+        <fieldset>
+          <legend class="green-text ">Личная информация</legend>
+          <div>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            <label for="name">Имя:</label>
+          </div>
+          <div>
+            <input type="date" id="dob" name="dob" required>
+            <label for="dob">Дата рождения:</label>
+          </div>
+          <div>
+            <select id="gender" name="gender">
+              <option value="male">Мужской</option>
+              <option value="female">Женский</option>
+            </select>
+            <label for="gender">Пол:</label>
+          </div>
+          <div>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+            <label for="password">Пароль:</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="green-text">Контактные данные</legend>
+          <div>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <label for="email">Email:</label>
+          </div>
+          <div>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (123) 456-78-90">
+            <label for="phone">Телефон:</label>
+          </div>
+          <div>
+            <div class="contact-interval-options">
+              <input type="checkbox" id="morning" name="contactInterval" value="morning">
+              <label for="morning">Утро</label>
             </div>
-        </form>
+            <div class="contact-interval-options">
+              <input type="checkbox" id="day" name="contactInterval" value="day">
+              <label for="day">День</label>
+            </div>
+            <div class="contact-interval-options">
+              <input type="checkbox" id="evening" name="contactInterval" value="evening">
+              <label for="evening">Вечер</label>
+            </div>
+            <div class="contact-interval-options">
+              <input type="checkbox" id="night" name="contactInterval" value="night">
+              <label for="night">Ночь</label>
+            </div>
+            <label>Удобный интервал для связи:</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <button type="submit"><i class="fas fa-paper-plane"></i> Отправить</button>
+          <button type="reset"><i class="fas fa-sync-alt"></i> Сбросить</button>
+        </div>
+      </form>
+    </section>
+    <section class="form_b">
+      <form>
+        <dl class="pseudo-elements-list">
+          <dt>Псевдоэлемент (before)</dt>
+          <dd>Создает псевдоэлемент, который будет расположен перед содержимым выбранного элемента.</dd>
+          <dt>Псевдоэлемент (after)</dt>
+          <dd>Создает псевдоэлемент, который будет расположен после содержимого выбранного элемента.</dd>
+          <dt>Псевдокласс (hover)</dt>
+          <dd>Применяется к элементу при наведении указателя мыши на него.</dd>
+        </dl>
+
+        <fieldset>
+          <legend>Выберите псевдоэлементы:</legend>
+          <input id="a1" type="checkbox" checked>
+          <label for="a1">Псевдоэлемент (before)</label><br>
+          <input id="a2" type="checkbox">
+          <label for="a2">Псевдоэлемент (after)</label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Выберите псевдоклассы:</legend>
+          <input type="checkbox" checked>
+          <label>Псевдокласс (hover)</label><br>
+        </fieldset>
+      </form>
+
     </section>
   </main>
   <footer class="footer">
     <ul class="footer__footer-container">
       <li class="footer-container__mpassistant-link">
         <div class="mpassistant-link__logo">
-          <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
+          <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant" class="footer-logo"></a>
           <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и
             <span class="sapphirine-text">Ozon</span>
           </p>
@@ -118,20 +148,26 @@
       </li>
       <li class="footer-container__more">
         <ul>
-          <li><h3>Сервис</h3></li>
+          <li>
+            <h3>Сервис</h3>
+          </li>
           <li><a href="#">Для кого</a></li>
           <li><a href="#">Возможности</a></li>
           <li><a href="#">Тарифы</a></li>
         </ul>
         <ul>
-          <li><h3>Клиентам</h3></li>
+          <li>
+            <h3>Клиентам</h3>
+          </li>
           <li><a href="#">Вход</a></li>
           <li><a href="#">Регистрация</a></li>
           <li><a href="#">Восстановления пароля</a></li>
           <li><a href="grid.html">GRID</a></li>
         </ul>
         <ul>
-          <li><h3>Документы</h3></li>
+          <li>
+            <h3>Документы</h3>
+          </li>
           <li><a href="#">Пользовательское соглашение</a></li>
           <li><a href="#">Политика конфиденциальности</a></li>
           <li><a href="#">Публичная оферта</a></li>
@@ -156,4 +192,5 @@
     </ul>
   </footer>
 </body>
+
 </html>
