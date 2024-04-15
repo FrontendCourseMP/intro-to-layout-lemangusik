@@ -110,3 +110,6 @@
         transform: translateX(-600%);
     }
 }
+html{
+    overflow: hidden;
+}
