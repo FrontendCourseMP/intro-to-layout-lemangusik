@@ -950,8 +950,8 @@ section {
   }
   .lets-start-form button {
     position: absolute;
-    top: 15px;
-    right: -15px;
+    top: 10px;
+    right: -1px;
     padding: 10px 20px;
 
     box-shadow: none;
@@ -1165,4 +1165,32 @@ section {
 
 ::selection{
   background-color: #11AE88;
+}
+
+input:focus::placeholder{
+  color: #1065FF;
+}
+
+a:hover{
+  color: #1065FF;
+}
+
+ ul li a:hover{
+  color: #1065FF;
+}
+
+.choose-tariff__tariff-level li a:nth-of-type(1):hover{
+  background: red ;
+  transition: all 1s;
+}
+ 
+.lets-start-form button:hover{
+  background: red;
+  /* background: var(--gradient-left-to-right); */
+  transition: all 1s; 
+}
+
+.selected-button__content:hover{
+  background: red ;
+  transition: all 1s;
 }
