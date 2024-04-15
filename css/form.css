@@ -18,17 +18,20 @@
     --radius-button: 30px;
     --radius-sale-birk: 0 10px;
   }
-  
+
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
  }
  label {
+    font-size: 2rem;
     font-weight: bold;
 }
 
 fieldset {
+    font-weight: bold;
+    font-size: 1.6rem;
     margin-bottom: 20px;
 }
 
@@ -53,12 +56,6 @@ fieldset > div input[type="checkbox"] {
     margin-right: 5px;
 }
 
-fieldset > div span {
-    color: red;
-    font-size: 14px;
-    font-weight: 600;
-}
-
 button {
     padding: 10px 20px;
     border: none;
@@ -67,6 +64,7 @@ button {
     color: white;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1.6rem;
 }
 
 button i {
@@ -75,4 +73,9 @@ button i {
 
 button:hover {
     background-color: var(--color-blue-green-text);
+}
+
+legend{
+    font-size: 3rem;
+    font-weight: bold;
 }
