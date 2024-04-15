@@ -75,32 +75,29 @@
     position: absolute;
     left: 100%;
     animation: running-images 5s linear infinite;
-    /* animation: marquee var(--marquee-speed) linear infinite; */
+
   
 }
 
 .running-images img:nth-child(1) {
-    /* left: 100%; */
     animation-delay: 0s;
 }
 
 .running-images img:nth-child(2) {
-    /* left: 125%; */
     animation-delay: -2s;
 }
 
 .running-images img:nth-child(3) {
-    /* left: 150%; */
     animation-delay: -4s;
 }
 
 .running-images img:nth-child(4) {
-    /* left: 175%; */
+
     animation-delay: -6s;
 }
 
 .running-images img:nth-child(5) {
-    /* left: 175%; */
+
     animation-delay: -8s;
 }
 
