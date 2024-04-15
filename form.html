@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <title>LE'mango</title>
+</head>
+<body>
+  <header class="header">
+    
+    <div class="header__header-container mobile">
+      <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
+      <a href="#" class="header-container__entrance-button"><img src="img/layout/icon/entrance.svg" alt="Entrance"></a>
+      <button class="header-container__burger-button"><img src="img/layout/icon/burger-menu.svg" alt="Menu"></button>
+    </div>
+
+    <div class="header__header-container desctop">
+      <div class="header-container__logo">
+        <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a>
+        <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и
+          <span class="sapphirine-text">Ozon</span></p>
+      </div>
+      <nav class="header-container__nav">
+        <a href="#">О нас</a>
+        <a href="#">Возможности</a>
+        <a href="#">Тарифы</a>
+      </nav>
+      <div class="header-container__entrance">
+        <a href="#" class="entrance__entrance-button"><img src="img/layout/icon/entrance.svg" alt="Entrance">Вход</a>
+        <a href="#" class="entrance__registration-button">Зарегистрироваться</a>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <section>
+        <h2>Регистрация нового пользователя</h2>
+        
+        <form action="//httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Личная информация</legend>
+                <div>
+                    <label for="name">Имя<span>*</span>:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </div>
+                <div>
+                    <label for="dob">Дата рождения<span>*</span>:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="gender">Пол:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="password">Пароль<span>*</span>:</label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <div>
+                    <label for="email">Email<span>*</span>:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (123) 456-78-90">
+                </div>
+                <div>
+                    <label>Удобный интервал для связи:</label>
+                    <div>
+                        <input type="checkbox" id="morning" name="contactInterval" value="morning">
+                        <label for="morning">Утро</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="day" name="contactInterval" value="day">
+                        <label for="day">День</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="evening" name="contactInterval" value="evening">
+                        <label for="evening">Вечер</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="night" name="contactInterval" value="night">
+                        <label for="night">Ночь</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <div>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Отправить</button>
+                <button type="reset"><i class="fas fa-sync-alt"></i> Сбросить</button>
+            </div>
+        </form>
+    </section>
+  </main>
+  <!-- <footer class="footer"> -->
+    <!-- <ul class="footer__footer-container"> -->
+      <!-- <li class="footer-container__mpassistant-link"> -->
+        <!-- <div class="mpassistant-link__logo"> -->
+          <!-- <a href="#"><img src="img/layout/mpassistant-logo.svg" alt="Mpassistant"></a> -->
+          <!-- <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и -->
+            <!-- <span class="sapphirine-text">Ozon</span> -->
+          <!-- </p> -->
+        <!-- </div> -->
+        <!-- <ul class="mpassistant-link__social-link"> -->
+          <!-- <li><img src="img/layout/icon/icon-vk.svg" alt="VK"></li> -->
+          <!-- <li><img src="img/layout/icon/icon-telegram.svg" alt="Telegram"></li> -->
+          <!-- <li><img src="img/layout/icon/icon-youtube.svg" alt="YouTube"></li> -->
+        <!-- </ul> -->
+      <!-- </li> -->
+      <!-- <li class="footer-container__more"> -->
+        <!-- <ul> -->
+          <!-- <li><h3>Сервис</h3></li> -->
+          <!-- <li><a href="#">Для кого</a></li> -->
+          <!-- <li><a href="#">Возможности</a></li> -->
+          <!-- <li><a href="#">Тарифы</a></li> -->
+        <!-- </ul> -->
+        <!-- <ul> -->
+          <!-- <li><h3>Клиентам</h3></li> -->
+          <!-- <li><a href="#">Вход</a></li> -->
+          <!-- <li><a href="#">Регистрация</a></li> -->
+          <!-- <li><a href="#">Восстановления пароля</a></li> -->
+          <!-- <li><a href="grid.html">GRID</a></li> -->
+        <!-- </ul> -->
+        <!-- <ul> -->
+          <!-- <li><h3>Документы</h3></li> -->
+          <!-- <li><a href="#">Пользовательское соглашение</a></li> -->
+          <!-- <li><a href="#">Политика конфиденциальности</a></li> -->
+          <!-- <li><a href="#">Публичная оферта</a></li> -->
+          <!-- <li><a href="#">Использование cookie</a></li> -->
+          <!-- <li><a href="#">Техническая поддержка</a></li> -->
+        <!-- </ul> -->
+      <!-- </li> -->
+      <!-- <li class="footer-container__payment-method"> -->
+        <!-- <a href="#"><img src="img/layout/footer/modulbank.svg" alt="Модуль банк"></a> -->
+        <!-- <a href="#"><img src="img/layout/footer/visa.svg" alt="VISA"></a> -->
+        <!-- <a href="#"><img src="img/layout/footer/mastercard.svg" alt="Master Card"></a> -->
+        <!-- <a href="#"><img src="img/layout/footer/maestro.svg" alt="Maestro"></a> -->
+        <!-- <a href="#"><img src="img/layout/footer/mir.svg" alt="МИР"></a> -->
+      <!-- </li> -->
+      <!-- <li class="footer-container__license"> -->
+        <!-- <p>© 2022–2023 Mpassistant</p> -->
+        <!-- <p>Информация, размещённая на сайте, не является публичной офертой</p> -->
+      <!-- </li> -->
+      <!-- <li class="footer-container__about-redesign"> -->
+        <!-- <p>Редизайн сайта <a href="#"><span class="green-text">Turkuletsdesign</span></a></p> -->
+      <!-- </li> -->
+    <!-- </ul> -->
+  <!-- </footer> -->
+</body>
+</html>
